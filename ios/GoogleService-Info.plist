@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>561390894862-pqosi7se9lh7cb279bh0mk6bfff03bct.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.561390894862-pqosi7se9lh7cb279bh0mk6bfff03bct</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBxpCEoAGa7gm6hh3v3qMoj1ZHa1F3cuOM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>561390894862</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.navegacionApp</string>
+	<key>PROJECT_ID</key>
+	<string>links-manager</string>
+	<key>STORAGE_BUCKET</key>
+	<string>links-manager.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:561390894862:ios:46a782ce973788d8ef215f</string>
+	<key>DATABASE_URL</key>
+	<string>https://links-manager.firebaseio.com</string>
+</dict>
+</plist>

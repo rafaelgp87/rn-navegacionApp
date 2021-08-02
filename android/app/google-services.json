@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "561390894862",
+    "firebase_url": "https://links-manager.firebaseio.com",
+    "project_id": "links-manager",
+    "storage_bucket": "links-manager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561390894862:android:c1efacbcc825c490ef215f",
+        "android_client_info": {
+          "package_name": "com.navegacionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561390894862-64it9tool2m9sirn8pc0476epf6jjrl6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAClR7sfo9fEX--MBKFxzw9SWCPbLGB18k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561390894862-64it9tool2m9sirn8pc0476epf6jjrl6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

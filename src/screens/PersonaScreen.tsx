@@ -1,4 +1,5 @@
 import { StackScreenProps } from '@react-navigation/stack';
+import analytics from '@react-native-firebase/analytics';
 import React from 'react';
 import { useEffect } from 'react';
 import { View, Text } from 'react-native';
@@ -24,6 +25,10 @@ export const PersonaScreen = ( { route, navigation }: Props ) => {
             title: params.nombre
         })
     }, [])
+
+    analytics().logScreenView({
+        screen_name: 'Persona'
+    })
 
     return(
         <View style={ styles.grobalMargin }>

@@ -1,3 +1,4 @@
+import analytics from '@react-native-firebase/analytics';
 import { useNavigation } from '@react-navigation/native';
 import React, { useEffect } from 'react';
 import { View, Text, Button } from 'react-native';
@@ -13,6 +14,10 @@ export const Pagina2Screen = () => {
             headerBackTitle: ''
         })
     }, [])
+
+    analytics().logScreenView({
+        screen_name: 'Pagina2'
+    })
 
     return (
         <View style={styles.grobalMargin} >

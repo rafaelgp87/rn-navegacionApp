@@ -3,7 +3,8 @@ import analytics from '@react-native-firebase/analytics';
 import { DrawerScreenProps } from '@react-navigation/drawer';
 //import { StackScreenProps } from '@react-navigation/stack';
 import { View, Text, Button, TouchableOpacity } from 'react-native';
-import { styles } from '../theme/appTheme';
+import { colors, styles } from '../theme/appTheme';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 interface Props extends DrawerScreenProps<any, any> { }
 
@@ -12,10 +13,18 @@ export const Pagina1Screen = ({ navigation }: Props) => {
     useEffect(() => {
         navigation.setOptions({
             headerLeft: () => (
-                <Button
-                    title="Menú"
-                    onPress={() => navigation.toggleDrawer()}
-                />
+                <TouchableOpacity
+                    style={{
+                        marginLeft: 10
+                    }}
+                    onPress={ () => { navigation.toggleDrawer() }}
+                >
+                    <Icon 
+                        name="menu-outline"
+                        color={ colors.primary }
+                        size={ 35 } 
+                    />
+                </TouchableOpacity>
             )
         })
     }, [])
@@ -52,6 +61,11 @@ export const Pagina1Screen = ({ navigation }: Props) => {
                         nombre: 'Rafa'
                     })}
                 >
+                    <Icon 
+                        name="body-outline"
+                        color="white"
+                        size={ 35 } 
+                    />
                     <Text style={styles.botonGrandeTexto} >
                         Rafa
                     </Text>
@@ -67,6 +81,11 @@ export const Pagina1Screen = ({ navigation }: Props) => {
                         nombre: 'Rafa 2'
                     })}
                 >
+                    <Icon 
+                        name="woman-outline"
+                        color="white"
+                        size={ 35 } 
+                    />
                     <Text style={styles.botonGrandeTexto} >
                         Rafa 2
                     </Text>
@@ -82,6 +101,11 @@ export const Pagina1Screen = ({ navigation }: Props) => {
                         await analytics().logEvent("evento_prueba", {"nombre": "Rafa", "edad": 33});
                     } }
                 >
+                    <Icon 
+                        name="logo-google"
+                        color="white"
+                        size={ 35 } 
+                    />
                     <Text style={styles.botonGrandeTexto} >
                         Google
                     </Text>

@@ -1,8 +1,8 @@
 import React, { useEffect }  from 'react';
 import { View, Text } from 'react-native';
-import { colors, styles } from '../theme/appTheme';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { styles } from '../theme/appTheme';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { TouchableIcon } from '../components/TouchableIcon';
 
 export const Tab1Screen = () => {
 
@@ -21,13 +21,13 @@ export const Tab1Screen = () => {
         >
             <Text style={ styles.title }> Icons </Text>
             <Text>
-                <Icon name="airplane-outline" size={30} color={ colors.primary } />
-                <Icon name="attach-outline" size={30} color={ colors.primary } />
-                <Icon name="bonfire-outline" size={30} color={ colors.primary } />
-                <Icon name="calculator-outline" size={30} color={ colors.primary } />
-                <Icon name="chatbubble-ellipses-outline" size={30} color={ colors.primary } />
-                <Icon name="images-outline" size={30} color={ colors.primary } />
-                <Icon name="leaf-outline" size={30} color={ colors.primary } />
+                <TouchableIcon iconName="airplane-outline" />
+                <TouchableIcon iconName="attach-outline" />
+                <TouchableIcon iconName="bonfire-outline" />
+                <TouchableIcon iconName="calculator-outline" />
+                <TouchableIcon iconName="chatbubble-ellipses-outline" />
+                <TouchableIcon iconName="images-outline" />
+                <TouchableIcon iconName="leaf-outline" />
             </Text>
         </View>
     )
